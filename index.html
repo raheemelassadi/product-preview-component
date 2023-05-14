@@ -32,13 +32,13 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-cream flex items justify-center">
+<body class="bg-cream flex justify-center">
 
 
-  <div class="container flex flex-col max-w-[375px] p-4 min-h-screen font-montserrat text-darkGrey items-center justify-center md:flex-row">
+  <div class="container flex flex-col max-w-[375px] p-4 font-montserrat text-darkGrey items-center justify-center sm:flex-row sm:items-center" >
     <img src="./images/image-product-mobile.jpg" alt="perfume bottle" class="object-scale-down rounded-tl-lg rounded-tr-lg sm:hidden">
-    <img src="images/image-product-desktop.jpg" alt="perfume bottle" class="rounded-tl-lg rounded-bl-lg hidden sm:inline-block object-cover">
-    <div class="container-body bg-white p-6 rounded-bl-lg rounded-br-lg ">
+    <img src="images/image-product-desktop.jpg" alt="perfume bottle" class="rounded-tl-lg rounded-bl-lg hidden sm:inline-block h-full self-center flex-initial ">
+    <div class="container-body bg-white p-6 rounded-bl-lg rounded-br-lg h-full sm:rounded-bl-none sm:rounded-tr-lg min-w-full items-center ">
 
       <p class="text-xs tracking-[.4em] pb-2">PERFUME</p>
 
@@ -52,7 +52,7 @@
       </div>
     
 
-      <div class="bg-darkCyan text-white flex justify-center items-center gap-3 py-3 rounded-md hover:cursor-pointer hover:brightness-50 transition duration-300">
+      <div class="bg-darkCyan text-white flex justify-center items-center gap-3 py-3 rounded-md hover:cursor-pointer hover:brightness-50 transition duration-300 self-end">
         <img src="./images/icon-cart.svg" alt="shopping cart">
         <p>Add to Cart</p>
       </div>
