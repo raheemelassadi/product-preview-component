@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <script src="https://cdn.tailwindcss.com"></script>
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <script>
@@ -15,7 +15,14 @@
           colors: {
             cream: 'hsl(30, 38%, 92%)',
             white: 'hsl(0, 0%, 100%)',
-          }
+            darkGrey: 'hsl(228, 12%, 48%)',
+            darkBlue: 'hsl(212, 21%, 14%)',
+            darkCyan: 'hsl(158, 36%, 37%)',
+          },
+          fontFamily: {
+            montserrat: ['Montserrat', 'sans-serif'],
+            fraunces: ['Fraunces', 'sans-serif'],
+          },
         }
       }
     }
@@ -23,27 +30,31 @@
   
   <title>Frontend Mentor | Product preview card component</title>
 
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-cream">
 
 
-  <div class="container flex flex-col max-w-[375px] p-4 min-h-screen">
-    <img src="./images/image-product-mobile.jpg" alt="perfume bottle" class="object-scale-down">
-    <div class="container-body bg-white p-6">
+  <div class="container flex flex-col max-w-[375px] p-4 min-h-screen font-montserrat text-darkGrey ">
+    <img src="./images/image-product-mobile.jpg" alt="perfume bottle" class="object-scale-down rounded-tl-lg rounded-tr-lg">
+    <div class="container-body bg-white p-6 rounded-bl-lg rounded-br-lg">
 
-      <p>PERFUME</p>
+      <p class="text-xs tracking-[.4em] pb-2">PERFUME</p>
 
-      <p>Gabrielle Essence Eau De Parfum</p>
+      <p class="text-3xl font-fraunces text-darkBlue pb-4">Gabrielle Essence Eau De Parfum</p>
     
-      <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+      <p class="text-sm pb-5">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
     
-      <div class="flex">
-      <p>$149.99</p>
-      <p>$169.99</p>
+      <div class="flex items-center pb-6">
+      <p class="text-3xl font-fraunces text-darkCyan">$149.99</p>
+      <p class="text-xs pl-5 line-through">$169.99</p>
       </div>
     
-      <p>Add to Cart</p>
+
+      <div class="bg-darkCyan text-white flex justify-center items-center gap-3 py-3 rounded-md">
+        <img src="./images/icon-cart.svg" alt="shopping cart">
+        <p>Add to Cart</p>
+      </div>
     </div>
   </div>
 
