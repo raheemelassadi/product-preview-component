@@ -32,12 +32,13 @@
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-cream flex flex-col items-center justify-center">
+<body class="bg-cream flex items justify-center">
 
 
-  <div class="container flex flex-col max-w-[375px] p-4 min-h-screen font-montserrat text-darkGrey ">
-    <img src="./images/image-product-mobile.jpg" alt="perfume bottle" class="object-scale-down rounded-tl-lg rounded-tr-lg">
-    <div class="container-body bg-white p-6 rounded-bl-lg rounded-br-lg">
+  <div class="container flex flex-col max-w-[375px] p-4 min-h-screen font-montserrat text-darkGrey items-center justify-center md:flex-row">
+    <img src="./images/image-product-mobile.jpg" alt="perfume bottle" class="object-scale-down rounded-tl-lg rounded-tr-lg sm:hidden">
+    <img src="images/image-product-desktop.jpg" alt="perfume bottle" class="rounded-tl-lg rounded-bl-lg hidden sm:inline-block object-cover">
+    <div class="container-body bg-white p-6 rounded-bl-lg rounded-br-lg ">
 
       <p class="text-xs tracking-[.4em] pb-2">PERFUME</p>
 
@@ -56,13 +57,6 @@
         <p>Add to Cart</p>
       </div>
     </div>
-  </div>
-
-
-  
-  <div class="">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
 </html>
